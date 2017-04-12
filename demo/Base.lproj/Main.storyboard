@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aaaa" translatesAutoresizingMaskIntoConstraints="NO" id="Sdr-8J-a32">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKy-dK-OTr">
+                                <rect key="frame" x="275" y="40" width="80" height="50"/>
+                                <color key="backgroundColor" red="0.99215692280000001" green="0.0" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9bL-gb-gX5"/>
+                                    <constraint firstAttribute="width" constant="80" id="ZgA-w7-4RS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ura-xy-7iW">
+                                <rect key="frame" x="130" y="200" width="115" height="60"/>
+                                <color key="backgroundColor" red="0.32487775619999998" green="0.61162674039999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vf6-p8-8ei"/>
+                                </constraints>
+                                <state key="normal" title="CenterBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-mO-g50">
+                                <rect key="frame" x="250" y="200" width="115" height="60"/>
+                                <color key="backgroundColor" red="0.31109696930000003" green="0.83808791039999997" blue="0.077535193670000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9eW-o2-two"/>
+                                </constraints>
+                                <state key="normal" title="RightBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PJ-SN-fNq">
+                                <rect key="frame" x="10" y="200" width="115" height="60"/>
+                                <color key="backgroundColor" red="0.99215692280000001" green="0.0" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="28Z-D5-4Sl"/>
+                                </constraints>
+                                <state key="normal" title="LeftBtn"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5PJ-SN-fNq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="1CH-kM-Uvk"/>
+                            <constraint firstItem="Ura-xy-7iW" firstAttribute="leading" secondItem="5PJ-SN-fNq" secondAttribute="trailing" constant="5" id="1I4-P6-hYe"/>
+                            <constraint firstItem="uCI-mO-g50" firstAttribute="width" secondItem="5PJ-SN-fNq" secondAttribute="width" id="71L-Eh-tOC"/>
+                            <constraint firstAttribute="trailing" secondItem="vKy-dK-OTr" secondAttribute="trailing" constant="20" id="7b5-h7-cLr"/>
+                            <constraint firstAttribute="trailing" secondItem="Sdr-8J-a32" secondAttribute="trailing" id="CUK-xj-sco"/>
+                            <constraint firstItem="uCI-mO-g50" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="F2k-uZ-mRo"/>
+                            <constraint firstItem="vKy-dK-OTr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="F9l-Mk-w6B"/>
+                            <constraint firstItem="Ura-xy-7iW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="OvA-6T-UnN"/>
+                            <constraint firstItem="Sdr-8J-a32" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PON-eE-8HF"/>
+                            <constraint firstAttribute="trailing" secondItem="uCI-mO-g50" secondAttribute="trailing" constant="10" id="RwI-Hb-mN1"/>
+                            <constraint firstAttribute="bottom" secondItem="Sdr-8J-a32" secondAttribute="bottom" constant="550" id="TfP-5g-yf2"/>
+                            <constraint firstItem="Ura-xy-7iW" firstAttribute="width" secondItem="5PJ-SN-fNq" secondAttribute="width" id="TqV-gV-arW"/>
+                            <constraint firstItem="5PJ-SN-fNq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="ZqZ-tM-6L2"/>
+                            <constraint firstItem="uCI-mO-g50" firstAttribute="leading" secondItem="Ura-xy-7iW" secondAttribute="trailing" constant="5" id="bpr-xB-9lV"/>
+                            <constraint firstItem="Sdr-8J-a32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kcE-DV-aU8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CenterBtn" destination="Ura-xy-7iW" id="xcW-Kw-UH2"/>
+                        <outlet property="LeftBtn" destination="5PJ-SN-fNq" id="VJK-gz-ets"/>
+                        <outlet property="RightBtn" destination="uCI-mO-g50" id="iF6-DQ-n8x"/>
+                        <outlet property="imagevie" destination="Sdr-8J-a32" id="xN2-LQ-ct0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aaaa" width="283" height="116"/>
+    </resources>
+</document>
